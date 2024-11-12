@@ -1,4 +1,3 @@
-// types/express/index.d.ts
 import 'express-session';
 import { Session, SessionData } from 'express-session';
 
