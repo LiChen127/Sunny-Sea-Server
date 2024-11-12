@@ -16,6 +16,7 @@
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "warn",
-    "no-console": "warn"
+    "no-console": "warn",
+    "semi": ["warn", "always"]
   }
 }

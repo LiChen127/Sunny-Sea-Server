@@ -1,11 +1,18 @@
 import winston from 'winston';
 
+// 创建全局 logger 实例
 const logger = winston.createLogger({
   level: 'info',
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(({ timestamp, level, message }) => {
+      return `${timestamp} [${level}]: ${message}`;
+    })
+  ),
   transports: [
-    new winston.transports.Console(), ,
-    new winston.transports.File({ filename: 'logs/combined.log' })
-  ],
+    new winston.transports.Console(),
+    new winston.transports.File({ filename: 'app.log' })
+  ]
 });
 
 export default logger;

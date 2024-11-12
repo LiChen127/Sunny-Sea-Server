@@ -1,12 +1,11 @@
 import jwt from 'jsonwebtoken';
 
-// 生成token
-export const generateToken = (userId: string, secretKey: string, expiresIn: string = '1h'): string => {
-  return jwt.sign({ userId }, secretKey, { expiresIn });
+export const generateToken = (userId: string, role: string) => {
+  return jwt.sign({ userId, role }, process.env.JWT_SECRET_KEY as string, {
+    expiresIn: '1h', // token 过期时间
+  });
 };
 
-
-// 验证token
-export const verifyToken = (token: string, secretKey: string): string | jwt.JwtPayload => {
-  return jwt.verify(token, secretKey); // 验证 JWT Token
+export const verifyToken = (token: string, secretKey: string) => {
+  return jwt.verify(token, secretKey);
 };
