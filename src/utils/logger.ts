@@ -1,5 +1,4 @@
 import winston from 'winston';
-import { level } from '../../node_modules/winston/index';
 
 const logger = winston.createLogger({
   level: 'info',

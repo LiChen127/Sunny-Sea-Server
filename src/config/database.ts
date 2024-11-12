@@ -1,6 +1,7 @@
 import { Sequelize } from 'sequelize';
 import dotenv from 'dotenv';
-import User from '../models/User.js';
+import { User } from '../models/User.js';
+import { UserProfile } from '../models/UserProfile.js';
 
 dotenv.config();
 
@@ -14,9 +15,14 @@ const sequelize = new Sequelize(
     dialect: 'mysql',
     logging: false,
   }
-)
+);
 
 // 初始化模型
 User.initModel(sequelize);
+UserProfile.initModel(sequelize);
+
+// User用户表和UserProfile用户基本情况表一对一关联
+User.hasOne(UserProfile, { foreignKey: 'id' });
+UserProfile.belongsTo(User, { foreignKey: 'id' });
 
 export default sequelize;
