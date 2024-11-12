@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@types/express-session':
+        specifier: ^1.18.0
+        version: 1.18.0
       amqplib:
         specifier: ^0.10.4
         version: 0.10.4
@@ -367,6 +370,9 @@ packages:
 
   '@types/express-serve-static-core@5.0.1':
     resolution: {integrity: sha512-CRICJIl0N5cXDONAdlTv5ShATZ4HEwk6kDDIW2/w9qOWKg+NU/5F8wYRWCrONad0/UKkloNSmmyN/wX4rtpbVA==, tarball: https://registry.npmmirror.com/@types/express-serve-static-core/-/express-serve-static-core-5.0.1.tgz}
+
+  '@types/express-session@1.18.0':
+    resolution: {integrity: sha512-27JdDRgor6PoYlURY+Y5kCakqp5ulC0kmf7y+QwaY+hv9jEFuQOThgkjyA53RP3jmKuBsH5GR6qEfFmvb8mwOA==, tarball: https://registry.npmmirror.com/@types/express-session/-/express-session-1.18.0.tgz}
 
   '@types/express@5.0.0':
     resolution: {integrity: sha512-DvZriSMehGHL1ZNLzi6MidnsDhUZM/x2pRdDIKdwbUNqqwHxMlRdkxtn6/EPKyqKpHqTl/4nRZsRNLpZxZRpPQ==, tarball: https://registry.npmmirror.com/@types/express/-/express-5.0.0.tgz}
@@ -1987,6 +1993,10 @@ snapshots:
       '@types/qs': 6.9.17
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
+
+  '@types/express-session@1.18.0':
+    dependencies:
+      '@types/express': 5.0.0
 
   '@types/express@5.0.0':
     dependencies:

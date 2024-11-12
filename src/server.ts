@@ -6,6 +6,7 @@ import logger from './utils/logger.js';
 import router from './routes/index.js';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
+import '../types/express';
 
 dotenv.config();
 
