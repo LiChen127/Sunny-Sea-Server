@@ -7,8 +7,6 @@ dist/
 
 # Logs
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # dotenv environment variable files
 .env
@@ -38,3 +36,6 @@ logs/
 
 # TypeScript output directory
 *.tsbuildinfo
+
+# design
+.design/

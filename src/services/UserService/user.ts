@@ -1,9 +1,8 @@
 import jwt from 'jsonwebtoken';
 import { User } from '../../models/User.js';
-import { JWT_EXPIRATION, JWT_SECRET } from '../../middlewares/auth.js';
+import { JWT_EXPIRATION, JWT_SECRET_KEY } from '../../middlewares/auth.js';
 import logger from '../../utils/logger.js';
 import { handleHashPassword, comparePassword } from '../../utils/encryption.js';
-
 export const register = async (username: string, password: string, role: string): Promise<User> => {
   // 哈希加密密码
   const hashPassword = await handleHashPassword(password);
@@ -16,13 +15,14 @@ export const register = async (username: string, password: string, role: string)
   return user;
 };
 
-export const login = async (username: string, password: string, role: string) => {
+export const login = async (username: string, password: string, role: string): Promise<string> => {
   const conrrectPasswordByValid = await comparePassword(password, 'hashPassword');
 
   if (!conrrectPasswordByValid) {
     logger.error(`用户登录失败, 用户名: ${username}, 密码错误`);
+    return 'password_error';
   }
-
-  const token = jwt.sign({ username, role: role }, JWT_SECRET, { expiresIn: JWT_EXPIRATION });
+  logger.info(`用户登录成功, 用户名: ${username}`);
+  const token = jwt.sign({ username, role: role }, JWT_SECRET_KEY, { expiresIn: JWT_EXPIRATION });
   return token;
 }
