@@ -3,6 +3,7 @@ import * as userProfileServices from '../../services/UserProfile/userProfile.js'
 import logger from '../../utils/logger.js';
 import { validate } from "uuid";
 import { handleReturn } from '../../utils/handleReturn.js';
+
 export const upload = async (req: Request, res: Response): Promise<any> => {
   try {
     const detail = req.body;
@@ -19,6 +20,27 @@ export const upload = async (req: Request, res: Response): Promise<any> => {
       logger.error(`request body: ${detail} 用户信息上传失败`)
       return handleReturn(400, null, '用户信息上传失败', res);
     }
+  } catch (error) {
+    logger.error(error);
+    return handleReturn(500, null, '服务器错误', res);
+  }
+}
+export const update = async (req: Request, res: Response): Promise<any> => {
+  try {
+    logger.info(req.baseUrl);
+    const response = await userProfileServices.update(req.body);
+    return handleReturn(response.code, response.data, response.message, res);
+  } catch (error) {
+    logger.error(error);
+    return handleReturn(500, null, '服务器错误', res);
+  }
+}
+
+export const getProfile = async (req: Request, res: Response): Promise<any> => {
+  try {
+    logger.info(req.baseUrl);
+    const response = await userProfileServices.getProfile(req.query.userId as string);
+    return handleReturn(response.code, response.data, response.message, res);
   } catch (error) {
     logger.error(error);
     return handleReturn(500, null, '服务器错误', res);
