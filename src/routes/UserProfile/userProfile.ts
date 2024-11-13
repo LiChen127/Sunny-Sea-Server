@@ -10,4 +10,7 @@ userProfileRouter.post('/upload', authenticateToken, (req, res) => {
 userProfileRouter.post('/update', authenticateToken, (req, res) => {
   userProfileController.update(req, res);
 })
+userProfileRouter.get('/getProfile', authenticateToken, (req, res) => {
+  userProfileController.getProfile(req, res);
+})
 export default userProfileRouter;

@@ -160,3 +160,7 @@
 2024-11-13T13:08:34.474Z [info]: token
 2024-11-13T13:08:34.476Z [info]: /api/profile
 2024-11-13T13:08:34.492Z [info]: 用户信息更新成功, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
+2024-11-13T13:34:33.269Z [info]: /api/profiletoken校验
+2024-11-13T13:34:33.270Z [info]: token
+2024-11-13T13:34:33.272Z [info]: /api/profile
+2024-11-13T13:34:33.277Z [info]: 用户信息获取成功, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c

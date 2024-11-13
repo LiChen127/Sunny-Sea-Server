@@ -29,13 +29,18 @@ export const update = async (req: Request, res: Response): Promise<any> => {
   try {
     logger.info(req.baseUrl);
     const response = await userProfileServices.update(req.body);
-    if (response.code === 200) {
-      return handleReturn(response.code, response.data, response.message, res);
-    }
-    if (response.code === 500) {
-      return handleReturn(response.code, response.data, response.message, res);
-    }
-    return handleReturn(400, null, '用户信息更新失败', res);
+    return handleReturn(response.code, response.data, response.message, res);
+  } catch (error) {
+    logger.error(error);
+    return handleReturn(500, null, '服务器错误', res);
+  }
+}
+
+export const getProfile = async (req: Request, res: Response): Promise<any> => {
+  try {
+    logger.info(req.baseUrl);
+    const response = await userProfileServices.getProfile(req.query.userId as string);
+    return handleReturn(response.code, response.data, response.message, res);
   } catch (error) {
     logger.error(error);
     return handleReturn(500, null, '服务器错误', res);

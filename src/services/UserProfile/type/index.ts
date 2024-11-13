@@ -19,16 +19,30 @@ type UpdateSuccessResponseData = {
   id: string;
   userId: string;
 }
-type UpdateErrorResponseData = {
+type ErrorResponseData = {
   error: string;
 }
 interface UpdateUserProfileResponse extends Response {
   code: number;
-  data: UpdateSuccessResponseData | UpdateErrorResponseData;
+  data: UpdateSuccessResponseData | ErrorResponseData;
+  message: string;
+}
+type GetProfileDataType = {
+  userId: string;
+  nickname: string;
+  gender: 'male' | 'female' | 'other';
+  birthDate: Date;
+  occupation: string;
+  region: string;
+}
+interface getProfileResponse extends Response {
+  code: number;
+  data: GetProfileDataType | ErrorResponseData;
   message: string;
 }
 export {
   UserProfileDetail,
   UpdateUserProfileDetailRequest,
   UpdateUserProfileResponse,
+  getProfileResponse,
 }
