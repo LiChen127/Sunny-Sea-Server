@@ -125,3 +125,22 @@
 2024-11-13T04:13:03.024Z [info]: [object Object]
 2024-11-13T04:13:03.032Z [info]: 用户信息上传成功, 昵称: narcilee
 2024-11-13T04:13:03.032Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-13T12:28:48.421Z [info]: /api/user
+2024-11-13T12:28:48.494Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T12:33:11.291Z [info]: /api/profiletoken校验
+2024-11-13T12:33:11.292Z [info]: token
+2024-11-13T12:33:30.723Z [info]: /api/profiletoken校验
+2024-11-13T12:33:30.723Z [info]: token
+2024-11-13T12:33:30.725Z [info]: [object Object]
+2024-11-13T12:33:30.741Z [info]: 用户信息上传成功, 昵称: cc121314
+2024-11-13T12:33:30.742Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-13T12:35:02.674Z [info]: /api/profiletoken校验
+2024-11-13T12:35:02.676Z [info]: token
+2024-11-13T12:35:02.678Z [info]: [object Object]
+2024-11-13T12:35:02.687Z [info]: 用户信息上传成功, 昵称: cc121314
+2024-11-13T12:35:02.688Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-13T12:37:09.787Z [info]: /api/profiletoken校验
+2024-11-13T12:37:09.789Z [info]: token
+2024-11-13T12:37:09.790Z [info]: [object Object]
+2024-11-13T12:37:09.795Z [error]: 用户信息上传失败, 用户id已存在
+2024-11-13T12:37:09.795Z [error]: request body: [object Object] 用户信息上传失败

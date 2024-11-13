@@ -7,6 +7,12 @@ export const upload = async (userProfileDetail: UserProfileDetail): Promise<User
   const { id, nickname, gender, birthDate, occupation, region } = userProfileDetail;
   try {
     // 保证信息完整
+    // 保证用户id唯一性
+    const userProfile = await UserProfile.findOne({ where: { userId: id } });
+    if (userProfile) {
+      logger.error('用户信息上传失败, 用户id已存在');
+      return null;
+    }
     if (!id || !nickname || !gender || !birthDate || !occupation || !region) {
       logger.error('用户信息上传失败, 信息不完整');
       return null;
