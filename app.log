@@ -1,0 +1,24 @@
+2024-11-13T01:09:11.917Z [info]: [object Object]
+2024-11-13T01:09:31.108Z [info]: [object Object]
+2024-11-13T01:09:31.190Z [info]: 用户开始注册, id: a06a4931-ce31-4e0b-b579-833c15dbd9a1, username: 17200543160
+2024-11-13T01:09:31.190Z [info]: 用户 17200543160 注册成功, ID: a06a4931-ce31-4e0b-b579-833c15dbd9a1
+2024-11-13T01:30:10.508Z [error]: 用户登录失败, 用户名: 17200543160, 密码错误
+2024-11-13T01:30:31.445Z [error]: 用户登录失败, 用户名: 17200543160, 密码错误
+2024-11-13T01:32:18.736Z [error]: 登录失败: Unknown column 'User.username' in 'where clause'
+2024-11-13T01:32:32.274Z [error]: 登录失败: Unknown column 'User.username' in 'where clause'
+2024-11-13T01:33:36.857Z [error]: 登录失败: Cannot read properties of null (reading 'password')
+2024-11-13T01:33:41.253Z [error]: 登录失败: Cannot read properties of null (reading 'password')
+2024-11-13T01:37:06.051Z [error]: 登录失败: Cannot read properties of null (reading 'password')
+2024-11-13T01:37:26.339Z [info]: [object Object]
+2024-11-13T01:37:26.411Z [info]: 用户开始注册, id: 7b546efa-8394-4744-8f97-5e37c7827b93, username: 17200543160
+2024-11-13T01:37:26.411Z [info]: 用户 17200543160 注册成功, ID: 7b546efa-8394-4744-8f97-5e37c7827b93
+2024-11-13T01:37:32.684Z [error]: 用户登录失败, 用户名: 17200543160, 密码错误
+2024-11-13T01:38:08.033Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T01:38:08.036Z [error]: 登录失败: option maxAge is invalid
+2024-11-13T01:38:19.340Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T01:38:19.345Z [error]: 登录失败: option maxAge is invalid
+2024-11-13T01:39:49.722Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T01:39:49.727Z [error]: 登录失败: option maxAge is invalid
+2024-11-13T01:42:01.918Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T01:44:54.838Z [info]: [object Object]
+2024-11-13T01:44:54.845Z [error]: 用户名 17200543160 已经被注册

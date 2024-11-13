@@ -7,7 +7,7 @@ const sessionConfig = {
   cookie: {
     httpOnly: true, // 防止客户端 JavaScript 访问 Cookie
     secure: process.env.NODE_ENV === 'production', // 在生产环境下使用 Secure Cookie
-    maxAge: 24 * 60 * 60 * 1000, // Cookie 过期时间（1 天）
+    maxAge: 60 * 60 * 1000,  // Cookie 过期时间（1 天）
   },
 }
 export default sessionConfig;
