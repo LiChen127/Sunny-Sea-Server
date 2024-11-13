@@ -14,7 +14,6 @@ export const upload = async (req: Request, res: Response, next: NextFunction): P
         message: '用户id不合法',
       }
     }
-    next();
     const response = await userProfileServices.upload(detail);
     if (response) {
       logger.info(`request body: ${detail} 用户信息上传成功`)

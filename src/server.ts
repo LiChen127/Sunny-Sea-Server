@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api', router);
 
 // 同步数据库
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ alter: true }).then(() => {
   console.log('Database & tables created!');
 });
 

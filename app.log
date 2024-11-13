@@ -111,3 +111,17 @@
 2024-11-13T03:58:18.323Z [info]: [object Object]
 2024-11-13T03:58:18.339Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Data too long for column 'userId' at row 1
 2024-11-13T03:58:18.339Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T04:12:23.812Z [info]: /api/user
+2024-11-13T04:12:23.892Z [info]: 用户开始注册, id: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c, username: 17200543160
+2024-11-13T04:12:23.892Z [info]: 用户 17200543160 注册成功, ID: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c
+2024-11-13T04:12:35.522Z [info]: /api/user
+2024-11-13T04:12:35.589Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T04:12:46.493Z [info]: /api/profiletoken校验
+2024-11-13T04:12:46.493Z [info]: token
+2024-11-13T04:12:46.496Z [info]: [object Object]
+2024-11-13T04:12:46.496Z [error]: next is not a function
+2024-11-13T04:13:03.019Z [info]: /api/profiletoken校验
+2024-11-13T04:13:03.021Z [info]: token
+2024-11-13T04:13:03.024Z [info]: [object Object]
+2024-11-13T04:13:03.032Z [info]: 用户信息上传成功, 昵称: narcilee
+2024-11-13T04:13:03.032Z [info]: request body: [object Object] 用户信息上传成功
