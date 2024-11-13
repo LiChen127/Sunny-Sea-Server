@@ -1,7 +1,7 @@
 import { UserProfile } from "../../models/UserProfile.js";
 import logger from "../../utils/logger.js";
 import { UserProfileDetail } from "./type/index.js";
-import { validate } from "uuid";
+
 
 export const upload = async (userProfileDetail: UserProfileDetail): Promise<UserProfile | null> => {
   const { id, nickname, gender, birthDate, occupation, region } = userProfileDetail;
@@ -11,8 +11,6 @@ export const upload = async (userProfileDetail: UserProfileDetail): Promise<User
       logger.error('用户信息上传失败, 信息不完整');
       return null;
     }
-    // 校验id是否合法
-
     const detail = await UserProfile.create({
       userId: id,  // 使用用户的 id 作为外键
       nickname,
