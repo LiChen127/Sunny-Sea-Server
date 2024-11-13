@@ -139,3 +139,8 @@
 2024-11-13T12:35:02.678Z [info]: [object Object]
 2024-11-13T12:35:02.687Z [info]: 用户信息上传成功, 昵称: cc121314
 2024-11-13T12:35:02.688Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-13T12:37:09.787Z [info]: /api/profiletoken校验
+2024-11-13T12:37:09.789Z [info]: token
+2024-11-13T12:37:09.790Z [info]: [object Object]
+2024-11-13T12:37:09.795Z [error]: 用户信息上传失败, 用户id已存在
+2024-11-13T12:37:09.795Z [error]: request body: [object Object] 用户信息上传失败
