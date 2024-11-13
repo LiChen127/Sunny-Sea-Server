@@ -7,8 +7,11 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist",
-    "typeRoots": ["node_modules/@types", "types"]
+    "typeRoots": ["node_modules/@types", "types"],
+    "types": ["node", "express"]
   },
-  "include": ["src/**/*.ts", "types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts", "types/**/*.ts", "src/**/*.d.ts"],
+  "exclude": [
+    "node_modules" // 排除 node_modules 目录
+  ]
 }

@@ -1,13 +1,12 @@
+/// <reference path="../types/express/index.d.ts" />
 import express from 'express';
 import dotenv from 'dotenv';
 import sequelize from './config/database.js';
 import redis from './config/redis.js';
-import logger from './utils/logger.js';
 import router from './routes/index.js';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
 import sessionConfig from './config/session.js';
-import '../types/express';
 
 
 dotenv.config();

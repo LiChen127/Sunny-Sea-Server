@@ -22,5 +22,5 @@ export const authenticateToken = (req: Request, res: Response, next: NextFunctio
   }
 };
 
-export const JWT_EXPIRATION = '1h';
+export const JWT_EXPIRATION = '1d';
 export const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;

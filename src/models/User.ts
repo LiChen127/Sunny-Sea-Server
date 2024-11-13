@@ -4,8 +4,7 @@ class User extends Model {
   public id!: string;
   public password!: string;
   public weChatId!: string;
-  // public email!: string;
-  public phoneNumber!: string;
+  public username!: string;
   public role!: 'user' | 'admin' | 'guest';
   public createdAt!: Date;
   public updatedAt!: Date;
@@ -27,7 +26,7 @@ class User extends Model {
           unique: true,
           allowNull: true
         },
-        phoneNumber: {
+        username: {
           type: DataTypes.STRING,
           unique: true,
           allowNull: true,
