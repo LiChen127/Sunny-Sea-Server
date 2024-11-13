@@ -1,10 +1,15 @@
 import { Request, Response, NextFunction } from 'express';
 import { verifyToken } from '../utils/token.js';
 import { handleReturn } from '../utils/handleReturn.js';
+import logger from '../utils/logger.js';
 
 export const authenticateToken = (req: Request, res: Response, next: NextFunction) => {
-  const token = req.headers['authorization']?.split(' ')[1];
+  // 请求头中拿到token
+  logger.info(req.baseUrl + 'token校验');
+  const token = req.headers['authorization']?.trim();
+  logger.info('token', token);
   if (token) {
+    // 借助 token 验证器进行验证
     const decoded = verifyToken(token, JWT_SECRET_KEY);
     if (decoded) {
       // 将解码后的用户信息附加到 req.user 属性

@@ -1,5 +1,5 @@
 import { DataTypes, Model, Sequelize } from 'sequelize';
-
+import { UserProfile } from './UserProfile.js';
 class User extends Model {
   public id!: string;
   public password!: string;
@@ -13,7 +13,7 @@ class User extends Model {
     User.init(
       {
         id: {
-          type: DataTypes.UUID,
+          type: DataTypes.CHAR(36),
           defaultValue: DataTypes.UUIDV4,
           primaryKey: true,
         },
@@ -23,12 +23,10 @@ class User extends Model {
         },
         weChatId: {
           type: DataTypes.STRING,
-          unique: true,
           allowNull: true
         },
         username: {
           type: DataTypes.STRING,
-          unique: true,
           allowNull: true,
           validate: { is: /^\d{11}$/ }
         },
@@ -43,7 +41,7 @@ class User extends Model {
         tableName: 'users',
         timestamps: true,
       }
-    )
+    );
   }
 }
 

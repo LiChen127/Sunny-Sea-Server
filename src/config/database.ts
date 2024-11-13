@@ -22,7 +22,7 @@ User.initModel(sequelize);
 UserProfile.initModel(sequelize);
 
 // User用户表和UserProfile用户基本情况表一对一关联
-User.hasOne(UserProfile, { foreignKey: 'id' });
-UserProfile.belongsTo(User, { foreignKey: 'id' });
+User.hasOne(UserProfile, { foreignKey: 'userId' });
+UserProfile.belongsTo(User, { foreignKey: 'userId' });
 
 export default sequelize;

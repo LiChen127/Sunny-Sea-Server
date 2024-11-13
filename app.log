@@ -22,3 +22,92 @@
 2024-11-13T01:42:01.918Z [info]: 用户登录成功, 用户名: 17200543160
 2024-11-13T01:44:54.838Z [info]: [object Object]
 2024-11-13T01:44:54.845Z [error]: 用户名 17200543160 已经被注册
+2024-11-13T02:19:27.013Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:08:06.192Z [info]: [object Object]
+2024-11-13T03:08:06.198Z [error]: 用户名 17200543160 已经被注册
+2024-11-13T03:08:19.341Z [info]: [object Object]
+2024-11-13T03:08:19.348Z [error]: 登录失败: Cannot read properties of null (reading 'password')
+2024-11-13T03:08:26.194Z [info]: [object Object]
+2024-11-13T03:08:26.267Z [info]: 用户开始注册, id: 56e21811-7966-4ca8-9d65-26e4befe83d1, username: 17200543160
+2024-11-13T03:08:26.268Z [info]: 用户 17200543160 注册成功, ID: 56e21811-7966-4ca8-9d65-26e4befe83d1
+2024-11-13T03:08:30.854Z [info]: [object Object]
+2024-11-13T03:08:30.911Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:09:09.647Z [info]: [object Object]
+2024-11-13T03:09:09.723Z [info]: 用户开始注册, id: c2748f8e-269c-45cf-bb17-ac4ea3332631, username: 17200543160
+2024-11-13T03:09:09.723Z [info]: 用户 17200543160 注册成功, ID: c2748f8e-269c-45cf-bb17-ac4ea3332631
+2024-11-13T03:09:13.653Z [info]: [object Object]
+2024-11-13T03:09:13.712Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:09:26.213Z [info]: [object Object]
+2024-11-13T03:09:26.280Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:10:50.590Z [info]: [object Object]
+2024-11-13T03:10:50.651Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:27:02.041Z [info]: token
+2024-11-13T03:27:21.233Z [info]: token
+2024-11-13T03:28:40.816Z [info]: /api/profiletoken校验
+2024-11-13T03:28:40.818Z [info]: token
+2024-11-13T03:28:50.092Z [info]: /api/profiletoken校验
+2024-11-13T03:28:50.095Z [info]: token
+2024-11-13T03:28:52.942Z [info]: /api/profiletoken校验
+2024-11-13T03:28:52.942Z [info]: token
+2024-11-13T03:29:26.790Z [info]: /api/profiletoken校验
+2024-11-13T03:29:26.793Z [info]: token
+2024-11-13T03:29:35.441Z [info]: /api/profiletoken校验
+2024-11-13T03:29:35.444Z [info]: token
+2024-11-13T03:30:08.988Z [info]: /api/profiletoken校验
+2024-11-13T03:30:08.990Z [info]: token
+2024-11-13T03:30:08.992Z [info]: [object Object]
+2024-11-13T03:30:09.007Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Column 'id' cannot be null
+2024-11-13T03:30:09.007Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:37:53.220Z [info]: [object Object]
+2024-11-13T03:37:53.288Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:37:59.358Z [info]: [object Object]
+2024-11-13T03:37:59.414Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:38:40.397Z [info]: /api/user
+2024-11-13T03:38:40.466Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:39:23.744Z [info]: /api/user
+2024-11-13T03:39:23.811Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:42:36.899Z [info]: /api/user
+2024-11-13T03:42:36.967Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:44:12.530Z [info]: /api/user
+2024-11-13T03:44:12.600Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:46:11.109Z [info]: /api/user
+2024-11-13T03:46:11.176Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:46:31.335Z [info]: /api/user
+2024-11-13T03:46:31.404Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:46:52.957Z [info]: /api/user
+2024-11-13T03:46:53.029Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:47:22.981Z [info]: /api/profiletoken校验
+2024-11-13T03:47:22.984Z [info]: token
+2024-11-13T03:47:22.986Z [info]: [object Object]
+2024-11-13T03:47:23.006Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Column 'id' cannot be null
+2024-11-13T03:47:23.007Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:47:37.984Z [info]: /api/profiletoken校验
+2024-11-13T03:47:37.986Z [info]: token
+2024-11-13T03:47:37.988Z [info]: [object Object]
+2024-11-13T03:47:38.001Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Column 'id' cannot be null
+2024-11-13T03:47:38.002Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:48:18.006Z [info]: /api/profiletoken校验
+2024-11-13T03:48:18.007Z [info]: token
+2024-11-13T03:48:18.008Z [info]: [object Object]
+2024-11-13T03:48:18.015Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Column 'id' cannot be null
+2024-11-13T03:48:18.015Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:49:06.405Z [info]: /api/profiletoken校验
+2024-11-13T03:49:06.407Z [info]: token
+2024-11-13T03:49:06.409Z [info]: [object Object]
+2024-11-13T03:49:06.422Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Field 'id' doesn't have a default value
+2024-11-13T03:49:06.423Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:49:38.065Z [info]: /api/profiletoken校验
+2024-11-13T03:49:38.067Z [info]: token
+2024-11-13T03:49:38.068Z [info]: [object Object]
+2024-11-13T03:49:38.090Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`sunny_sea`.`user_profiles`, CONSTRAINT `user_profiles_ibfk_1` FOREIGN KEY (`id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-11-13T03:49:38.090Z [error]: request body: [object Object] 用户信息上传失败
+2024-11-13T03:57:58.874Z [info]: /api/user
+2024-11-13T03:57:58.948Z [info]: 用户开始注册, id: 6755e9d5-b0b5-4cb0-8a63-871dbfd7a150, username: 17200543160
+2024-11-13T03:57:58.948Z [info]: 用户 17200543160 注册成功, ID: 6755e9d5-b0b5-4cb0-8a63-871dbfd7a150
+2024-11-13T03:58:02.151Z [info]: /api/user
+2024-11-13T03:58:02.207Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-13T03:58:18.320Z [info]: /api/profiletoken校验
+2024-11-13T03:58:18.321Z [info]: token
+2024-11-13T03:58:18.323Z [info]: [object Object]
+2024-11-13T03:58:18.339Z [error]: 用户信息上传失败, 昵称: narcilee, 错误信息: SequelizeDatabaseError: Data too long for column 'userId' at row 1
+2024-11-13T03:58:18.339Z [error]: request body: [object Object] 用户信息上传失败

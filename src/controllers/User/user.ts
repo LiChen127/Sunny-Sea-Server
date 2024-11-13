@@ -4,6 +4,7 @@ import logger from '../../utils/logger.js';
 import { handleReturn } from '../../utils/handleReturn.js';
 import { JWT_EXPIRATION } from '../../middlewares/auth.js';
 import ms from 'ms';
+import { UserLoginResponse } from '../../services/User/type/index.js';
 export const register = async (req: Request, res: Response): Promise<any> => {
   try {
     const { username, password, role } = req.body;
@@ -27,13 +28,13 @@ export const register = async (req: Request, res: Response): Promise<any> => {
 export const login = async (req: Request, res: Response): Promise<any> => {
   try {
     const { username, password, role } = req.body;
-    const token = await userService.login(username, password, role);
+    const response = await userService.login(username, password, role);
 
-    if (token === 'password_error') {
+    if (!response) {
       return handleReturn(401, null, '密码错误', res);
     }
     // 设置Cookie 存储token
-    res.cookie('auth_token', token, {
+    res.cookie('sunny_sea_token', response.token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       maxAge: ms(JWT_EXPIRATION),
@@ -43,7 +44,7 @@ export const login = async (req: Request, res: Response): Promise<any> => {
     req.session.username = username;
     req.session.role = role;
 
-    return handleReturn(200, { token }, '登录成功', res);
+    return handleReturn(200, { id: response.id, token: response.token }, '登录成功', res);
   } catch (err) {
     logger.error(`登录失败: ${err.message}`);
     return handleReturn(500, { err }, '登录失败', res);

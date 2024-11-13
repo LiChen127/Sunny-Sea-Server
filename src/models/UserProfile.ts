@@ -3,6 +3,7 @@ import { User } from './User.js';
 class UserProfile extends Model {
   public id!: string;
   public nickname!: string;
+  public userId!: string;
   public gender!: 'male' | 'female' | 'other';
   public birthDate!: Date;
   public occupation!: string;
@@ -15,11 +16,16 @@ class UserProfile extends Model {
       {
         id: {
           type: DataTypes.UUID,
+          defaultValue: DataTypes.UUIDV4,
           primaryKey: true,
+        },
+        userId: {
+          type: DataTypes.CHAR(36),
+          allowNull: false,
           references: {
             model: User,
-            key: 'id'
-          }
+            key: 'id',
+          },
         },
         nickname: { type: DataTypes.STRING },
         gender: { type: DataTypes.ENUM('male', 'female', 'other') },
@@ -33,12 +39,10 @@ class UserProfile extends Model {
         tableName: 'user_profiles',
         timestamps: true,
       }
-    )
+    );
   }
 }
-// 一对一关联
-// User.hasOne(UserProfile, { foreignKey: 'id' });
-// UserProfile.belongsTo(User, { foreignKey: 'id' });
+
 
 
 export { UserProfile };
