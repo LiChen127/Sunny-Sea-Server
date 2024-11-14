@@ -5,23 +5,22 @@ import { UserProfile } from '../models/UserProfile.js';
 
 dotenv.config();
 
-const sequelize = new Sequelize(
-  process.env.MYSQL_DATABASE as string,
-  process.env.MYSQL_USER as string,
-  process.env.MYSQL_PASSWORD as string,
-  {
-    host: process.env.MYSQL_HOST,
-    port: Number(process.env.MYSQL_PORT) || 3306,
-    dialect: 'mysql',
-    logging: false,
-  }
-);
+// 使用环境变量配置数据库连接
+const sequelize = new Sequelize({
+  database: process.env.MYSQL_DATABASE,
+  username: process.env.MYSQL_USER,
+  password: process.env.MYSQL_PASSWORD,
+  host: process.env.MYSQL_HOST,
+  port: Number(process.env.MYSQL_PORT) || 3306,
+  dialect: 'mysql',
+  logging: false,
+});
 
 // 初始化模型
 User.initModel(sequelize);
 UserProfile.initModel(sequelize);
 
-// User用户表和UserProfile用户基本情况表一对一关联
+// 关联模型
 User.hasOne(UserProfile, { foreignKey: 'userId' });
 UserProfile.belongsTo(User, { foreignKey: 'userId' });
 

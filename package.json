@@ -9,7 +9,7 @@
     "start": "tsx src/server.ts",
     "lint": "eslint 'src/**/*.ts'",
     "format": "prettier --write 'src/**/*.ts'",
-    "migrate": "cross-env npx tsx node_modules/.bin/sequelize-cli db:migrate"
+    "migrate": "tsx ./scripts/migrate.js"
   },
   "lint-staged": {
     "*.ts": [
@@ -36,6 +36,7 @@
     "mysql2": "^3.11.4",
     "sequelize": "^6.37.5",
     "sequelize-cli": "^6.6.2",
+    "umzug": "^3.8.2",
     "uuid": "^11.0.3",
     "winston": "^3.17.0"
   },
