@@ -164,3 +164,237 @@
 2024-11-13T13:34:33.270Z [info]: token
 2024-11-13T13:34:33.272Z [info]: /api/profile
 2024-11-13T13:34:33.277Z [info]: 用户信息获取成功, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
+2024-11-16T02:19:42.724Z [info]: /api/posttoken校验
+2024-11-16T02:19:42.726Z [info]: token
+2024-11-16T02:20:10.803Z [info]: /api/user
+2024-11-16T02:20:10.902Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-16T02:20:21.695Z [info]: /api/posttoken校验
+2024-11-16T02:20:21.696Z [info]: token
+2024-11-16T02:20:21.697Z [info]: /api/post
+2024-11-16T02:20:21.715Z [error]: 用户发帖失败,userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c,error: SequelizeDatabaseError: Unknown column 'User.userId' in 'where clause'
+2024-11-16T02:21:32.590Z [info]: /api/posttoken校验
+2024-11-16T02:21:32.592Z [info]: token
+2024-11-16T02:21:32.593Z [info]: /api/post
+2024-11-16T02:21:32.611Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 c077d727-53eb-4bf9-b05b-2028a2db2fcc
+2024-11-16T02:59:14.029Z [info]: /api/posttoken校验
+2024-11-16T02:59:14.030Z [info]: token
+2024-11-16T02:59:14.032Z [info]: /api/post
+2024-11-16T02:59:14.032Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T02:59:14.049Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1
+2024-11-16T03:01:28.273Z [info]: /api/posttoken校验
+2024-11-16T03:01:28.275Z [info]: token
+2024-11-16T03:01:28.277Z [info]: /api/post
+2024-11-16T03:01:28.277Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:01:28.279Z [error]: WHERE parameter "tag" has invalid "undefined" value
+2024-11-16T03:01:40.515Z [info]: /api/posttoken校验
+2024-11-16T03:01:40.517Z [info]: token
+2024-11-16T03:01:40.519Z [info]: /api/post
+2024-11-16T03:01:40.520Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:01:40.529Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1
+2024-11-16T03:03:16.960Z [info]: /api/posttoken校验
+2024-11-16T03:03:16.962Z [info]: token
+2024-11-16T03:03:16.964Z [info]: /api/post
+2024-11-16T03:03:16.965Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:03:16.967Z [error]: WHERE parameter "tag" has invalid "undefined" value
+2024-11-16T03:03:27.432Z [info]: /api/posttoken校验
+2024-11-16T03:03:27.434Z [info]: token
+2024-11-16T03:03:27.436Z [info]: /api/post
+2024-11-16T03:03:27.436Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:03:30.910Z [info]: /api/posttoken校验
+2024-11-16T03:03:30.911Z [info]: token
+2024-11-16T03:03:30.912Z [info]: /api/post
+2024-11-16T03:03:30.912Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:04:45.983Z [info]: /api/posttoken校验
+2024-11-16T03:04:45.985Z [info]: token
+2024-11-16T03:04:45.987Z [info]: /api/post
+2024-11-16T03:04:45.988Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:05:21.680Z [info]: /api/posttoken校验
+2024-11-16T03:05:21.680Z [info]: token
+2024-11-16T03:05:21.681Z [info]: /api/post
+2024-11-16T03:05:21.682Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:05:21.706Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:14.536Z [info]: /api/posttoken校验
+2024-11-16T03:06:14.538Z [info]: token
+2024-11-16T03:06:14.540Z [info]: /api/post
+2024-11-16T03:06:14.541Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:06:14.552Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:24.178Z [info]: /api/posttoken校验
+2024-11-16T03:06:24.178Z [info]: token
+2024-11-16T03:06:24.179Z [info]: /api/post
+2024-11-16T03:06:24.179Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:06:24.181Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:56.576Z [info]: /api/posttoken校验
+2024-11-16T03:06:56.578Z [info]: token
+2024-11-16T03:06:56.580Z [info]: /api/post
+2024-11-16T03:06:56.580Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:07:26.554Z [info]: /api/posttoken校验
+2024-11-16T03:07:26.556Z [info]: token
+2024-11-16T03:07:26.559Z [info]: /api/post
+2024-11-16T03:07:26.559Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:07:55.239Z [info]: /api/posttoken校验
+2024-11-16T03:07:55.240Z [info]: token
+2024-11-16T03:07:55.242Z [info]: /api/post
+2024-11-16T03:07:55.243Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:08:03.088Z [info]: /api/posttoken校验
+2024-11-16T03:08:03.090Z [info]: token
+2024-11-16T03:08:03.093Z [info]: /api/post
+2024-11-16T03:08:03.094Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:02.648Z [info]: /api/posttoken校验
+2024-11-16T03:11:02.650Z [info]: token
+2024-11-16T03:11:02.652Z [info]: /api/post
+2024-11-16T03:11:02.653Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:20.753Z [info]: /api/posttoken校验
+2024-11-16T03:11:20.753Z [info]: token
+2024-11-16T03:11:20.754Z [info]: /api/post
+2024-11-16T03:11:20.754Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:34.139Z [info]: /api/posttoken校验
+2024-11-16T03:11:34.139Z [info]: token
+2024-11-16T03:11:34.140Z [info]: /api/post
+2024-11-16T03:11:34.140Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:14:15.055Z [info]: /api/posttoken校验
+2024-11-16T03:14:15.057Z [info]: token
+2024-11-16T03:14:15.059Z [info]: /api/post
+2024-11-16T03:14:15.060Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:33:50.213Z [info]: /api/posttoken校验
+2024-11-16T03:33:50.215Z [info]: token
+2024-11-16T03:33:50.217Z [info]: /api/post
+2024-11-16T03:33:50.235Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 5af29292-6357-4877-80f9-c671d091886e
+2024-11-16T03:34:54.379Z [info]: /api/posttoken校验
+2024-11-16T03:34:54.380Z [info]: token
+2024-11-16T03:34:54.381Z [info]: /api/post
+2024-11-16T03:34:54.381Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:34:54.384Z [error]: Error in getPosts:
+2024-11-16T03:35:21.394Z [info]: /api/posttoken校验
+2024-11-16T03:35:21.395Z [info]: token
+2024-11-16T03:35:21.395Z [info]: /api/post
+2024-11-16T03:35:21.396Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:35:21.397Z [error]: Error in getPosts:
+2024-11-16T03:37:10.073Z [info]: /api/posttoken校验
+2024-11-16T03:37:10.075Z [info]: token
+2024-11-16T03:37:10.077Z [info]: /api/post
+2024-11-16T03:37:10.078Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:37:10.083Z [error]: Error in getPosts:
+2024-11-16T03:41:29.222Z [info]: /api/posttoken校验
+2024-11-16T03:41:29.224Z [info]: token
+2024-11-16T03:41:29.227Z [info]: /api/post
+2024-11-16T03:41:29.227Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:41:29.233Z [error]: Error in getPosts:
+2024-11-16T03:41:58.170Z [info]: /api/posttoken校验
+2024-11-16T03:41:58.173Z [info]: token
+2024-11-16T03:41:58.176Z [info]: /api/post
+2024-11-16T03:41:58.176Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:41:58.181Z [error]: Error in getPosts:
+2024-11-16T03:42:16.853Z [info]: /api/posttoken校验
+2024-11-16T03:42:16.855Z [info]: token
+2024-11-16T03:42:16.857Z [info]: /api/post
+2024-11-16T03:42:16.858Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:47:01.661Z [info]: /api/posttoken校验
+2024-11-16T03:47:01.663Z [info]: token
+2024-11-16T03:47:01.665Z [info]: /api/post
+2024-11-16T03:47:01.666Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:47:14.416Z [info]: /api/posttoken校验
+2024-11-16T03:47:14.417Z [info]: token
+2024-11-16T03:47:14.418Z [info]: /api/post
+2024-11-16T03:47:14.435Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 93323d59-0506-4558-a0d4-b87b9aef5a88
+2024-11-16T03:47:17.495Z [info]: /api/posttoken校验
+2024-11-16T03:47:17.495Z [info]: token
+2024-11-16T03:47:17.496Z [info]: /api/post
+2024-11-16T03:47:17.503Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 d52cd74c-31db-4ea5-88d8-afdc5f8a4bfe
+2024-11-16T03:47:18.095Z [info]: /api/posttoken校验
+2024-11-16T03:47:18.096Z [info]: token
+2024-11-16T03:47:18.096Z [info]: /api/post
+2024-11-16T03:47:18.101Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 8fe07474-8b3b-4a1f-82f1-570ffce00a85
+2024-11-16T03:47:18.527Z [info]: /api/posttoken校验
+2024-11-16T03:47:18.528Z [info]: token
+2024-11-16T03:47:18.528Z [info]: /api/post
+2024-11-16T03:47:18.534Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 0c8788c1-6321-4623-a5dd-aad67f7658b4
+2024-11-16T03:47:19.016Z [info]: /api/posttoken校验
+2024-11-16T03:47:19.017Z [info]: token
+2024-11-16T03:47:19.017Z [info]: /api/post
+2024-11-16T03:47:19.023Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 fce9e929-4478-48de-b53a-a7031816fe9a
+2024-11-16T03:47:19.439Z [info]: /api/posttoken校验
+2024-11-16T03:47:19.440Z [info]: token
+2024-11-16T03:47:19.441Z [info]: /api/post
+2024-11-16T03:47:19.446Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 c93319dc-59f2-4bc3-a0c0-3536040c41c2
+2024-11-16T03:47:19.824Z [info]: /api/posttoken校验
+2024-11-16T03:47:19.825Z [info]: token
+2024-11-16T03:47:19.825Z [info]: /api/post
+2024-11-16T03:47:19.831Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 3736ce5b-9785-4741-993f-beac24deb244
+2024-11-16T03:47:20.317Z [info]: /api/posttoken校验
+2024-11-16T03:47:20.318Z [info]: token
+2024-11-16T03:47:20.319Z [info]: /api/post
+2024-11-16T03:47:20.324Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 570520ec-a02e-47e0-8781-fbb37202568d
+2024-11-16T03:47:34.594Z [info]: /api/posttoken校验
+2024-11-16T03:47:34.595Z [info]: token
+2024-11-16T03:47:34.595Z [info]: /api/post
+2024-11-16T03:47:34.596Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
+2024-11-16T03:49:54.990Z [info]: /api/posttoken校验
+2024-11-16T03:49:54.991Z [info]: token
+2024-11-16T03:49:54.993Z [info]: /api/post
+2024-11-16T03:49:55.012Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 58b76058-47c4-414d-ac9a-6a1b8bdfad98
+2024-11-16T03:51:08.426Z [info]: /api/posttoken校验
+2024-11-16T03:51:08.426Z [info]: token
+2024-11-16T03:51:18.796Z [info]: /api/user
+2024-11-16T03:51:18.867Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-16T03:51:24.696Z [info]: /api/posttoken校验
+2024-11-16T03:51:24.697Z [info]: token
+2024-11-16T03:51:24.698Z [info]: /api/post
+2024-11-16T03:51:24.702Z [error]: 删除失败, ReplyError: ERR wrong number of arguments for 'hset' command postId: 58b76058-47c4-414d-ac9a-6a1b8bdfad98, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
+2024-11-16T03:53:41.260Z [info]: /api/posttoken校验
+2024-11-16T03:53:41.262Z [info]: token
+2024-11-16T03:53:41.263Z [info]: /api/post
+2024-11-16T03:53:41.270Z [error]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 58b76058-47c4-414d-ac9a-6a1b8bdfad98帖子失败， 帖子不存在
+2024-11-16T03:53:49.825Z [info]: /api/posttoken校验
+2024-11-16T03:53:49.825Z [info]: token
+2024-11-16T03:53:49.826Z [info]: /api/post
+2024-11-16T03:53:49.839Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 f8fa5c0e-9feb-4745-841a-47152be3e970
+2024-11-16T03:54:09.564Z [info]: /api/posttoken校验
+2024-11-16T03:54:09.565Z [info]: token
+2024-11-16T03:54:09.566Z [info]: /api/post
+2024-11-16T03:54:09.569Z [error]: 7f3afc70-f851-4fa0-98cb-1619d34df1cf 删除 58b76058-47c4-414d-ac9a-6a1b8bdfad98帖子失败， 帖子不存在
+2024-11-16T03:54:17.942Z [info]: /api/posttoken校验
+2024-11-16T03:54:17.942Z [info]: token
+2024-11-16T03:54:17.943Z [info]: /api/post
+2024-11-16T03:54:17.944Z [error]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 7f3afc70-f851-4fa0-98cb-1619d34df1cf帖子失败， 帖子不存在
+2024-11-16T03:54:21.604Z [info]: /api/posttoken校验
+2024-11-16T03:54:21.604Z [info]: token
+2024-11-16T03:54:21.605Z [info]: /api/post
+2024-11-16T03:54:21.607Z [error]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 7f3afc70-f851-4fa0-98cb-1619d34df1cf帖子失败， 帖子不存在
+2024-11-16T03:54:26.065Z [info]: /api/posttoken校验
+2024-11-16T03:54:26.065Z [info]: token
+2024-11-16T03:54:26.066Z [info]: /api/post
+2024-11-16T03:54:26.072Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 b55ad569-d66c-4ec9-965c-e0bd3ab48a9a
+2024-11-16T03:54:38.134Z [info]: /api/posttoken校验
+2024-11-16T03:54:38.134Z [info]: token
+2024-11-16T03:54:38.135Z [info]: /api/post
+2024-11-16T03:54:38.138Z [error]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 62bc577e-1c79-47a4-bbcd-e7bd3420c9f6帖子失败， 帖子不存在
+2024-11-16T03:55:16.012Z [info]: /api/posttoken校验
+2024-11-16T03:55:16.014Z [info]: token
+2024-11-16T03:55:16.016Z [info]: /api/post
+2024-11-16T03:55:16.028Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 d0d9cdd8-5d9b-4890-96bd-fd7829592ea7
+2024-11-16T03:55:41.031Z [info]: /api/posttoken校验
+2024-11-16T03:55:41.032Z [info]: token
+2024-11-16T03:55:41.033Z [info]: /api/post
+2024-11-16T03:55:41.039Z [error]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 8c706e64-ec5a-40af-961d-b17a16b21567帖子失败， 帖子不存在
+2024-11-16T03:57:25.079Z [info]: /api/posttoken校验
+2024-11-16T03:57:25.081Z [info]: token
+2024-11-16T03:57:25.083Z [info]: /api/post
+2024-11-16T03:57:25.096Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 a3e66562-0854-481d-8698-4daae195cfa4
+2024-11-16T03:57:34.312Z [info]: /api/posttoken校验
+2024-11-16T03:57:34.313Z [info]: token
+2024-11-16T03:57:34.314Z [info]: /api/post
+2024-11-16T03:57:34.320Z [info]: 92f247a1-3367-40c9-9036-1dce2ed4c39c 删除 9a6f67d1-24d8-415b-b67f-b716c3cd89bd帖子 成功, 备份user:92f247a1-3367-40c9-9036-1dce2ed4c39c:backup_posts成功
+2024-11-16T05:08:15.361Z [info]: /api/posttoken校验
+2024-11-16T05:08:15.363Z [info]: token
+2024-11-16T05:08:23.306Z [info]: /api/user
+2024-11-16T05:08:23.376Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-16T05:08:35.689Z [info]: /api/posttoken校验
+2024-11-16T05:08:35.690Z [info]: token
+2024-11-16T05:08:35.691Z [info]: /api/post
+2024-11-16T05:08:39.629Z [info]: /api/posttoken校验
+2024-11-16T05:08:39.630Z [info]: token
+2024-11-16T05:08:39.631Z [info]: /api/post
+2024-11-16T05:11:39.441Z [info]: /api/posttoken校验
+2024-11-16T05:11:39.443Z [info]: token
+2024-11-16T05:11:39.445Z [info]: /api/post
+2024-11-16T05:11:39.451Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c, postId319323e2-bfd5-48c5-9e8a-2946e93bee95update post success
