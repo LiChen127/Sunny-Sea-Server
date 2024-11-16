@@ -164,3 +164,90 @@
 2024-11-13T13:34:33.270Z [info]: token
 2024-11-13T13:34:33.272Z [info]: /api/profile
 2024-11-13T13:34:33.277Z [info]: 用户信息获取成功, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
+2024-11-16T02:19:42.724Z [info]: /api/posttoken校验
+2024-11-16T02:19:42.726Z [info]: token
+2024-11-16T02:20:10.803Z [info]: /api/user
+2024-11-16T02:20:10.902Z [info]: 用户登录成功, 用户名: 17200543160
+2024-11-16T02:20:21.695Z [info]: /api/posttoken校验
+2024-11-16T02:20:21.696Z [info]: token
+2024-11-16T02:20:21.697Z [info]: /api/post
+2024-11-16T02:20:21.715Z [error]: 用户发帖失败,userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c,error: SequelizeDatabaseError: Unknown column 'User.userId' in 'where clause'
+2024-11-16T02:21:32.590Z [info]: /api/posttoken校验
+2024-11-16T02:21:32.592Z [info]: token
+2024-11-16T02:21:32.593Z [info]: /api/post
+2024-11-16T02:21:32.611Z [info]: 用户 92f247a1-3367-40c9-9036-1dce2ed4c39c 发布了帖子 c077d727-53eb-4bf9-b05b-2028a2db2fcc
+2024-11-16T02:59:14.029Z [info]: /api/posttoken校验
+2024-11-16T02:59:14.030Z [info]: token
+2024-11-16T02:59:14.032Z [info]: /api/post
+2024-11-16T02:59:14.032Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T02:59:14.049Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1
+2024-11-16T03:01:28.273Z [info]: /api/posttoken校验
+2024-11-16T03:01:28.275Z [info]: token
+2024-11-16T03:01:28.277Z [info]: /api/post
+2024-11-16T03:01:28.277Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:01:28.279Z [error]: WHERE parameter "tag" has invalid "undefined" value
+2024-11-16T03:01:40.515Z [info]: /api/posttoken校验
+2024-11-16T03:01:40.517Z [info]: token
+2024-11-16T03:01:40.519Z [info]: /api/post
+2024-11-16T03:01:40.520Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:01:40.529Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '''' at line 1
+2024-11-16T03:03:16.960Z [info]: /api/posttoken校验
+2024-11-16T03:03:16.962Z [info]: token
+2024-11-16T03:03:16.964Z [info]: /api/post
+2024-11-16T03:03:16.965Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:03:16.967Z [error]: WHERE parameter "tag" has invalid "undefined" value
+2024-11-16T03:03:27.432Z [info]: /api/posttoken校验
+2024-11-16T03:03:27.434Z [info]: token
+2024-11-16T03:03:27.436Z [info]: /api/post
+2024-11-16T03:03:27.436Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:03:30.910Z [info]: /api/posttoken校验
+2024-11-16T03:03:30.911Z [info]: token
+2024-11-16T03:03:30.912Z [info]: /api/post
+2024-11-16T03:03:30.912Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:04:45.983Z [info]: /api/posttoken校验
+2024-11-16T03:04:45.985Z [info]: token
+2024-11-16T03:04:45.987Z [info]: /api/post
+2024-11-16T03:04:45.988Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:05:21.680Z [info]: /api/posttoken校验
+2024-11-16T03:05:21.680Z [info]: token
+2024-11-16T03:05:21.681Z [info]: /api/post
+2024-11-16T03:05:21.682Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:05:21.706Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:14.536Z [info]: /api/posttoken校验
+2024-11-16T03:06:14.538Z [info]: token
+2024-11-16T03:06:14.540Z [info]: /api/post
+2024-11-16T03:06:14.541Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:06:14.552Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:24.178Z [info]: /api/posttoken校验
+2024-11-16T03:06:24.178Z [info]: token
+2024-11-16T03:06:24.179Z [info]: /api/post
+2024-11-16T03:06:24.179Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:06:24.181Z [error]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''10'' at line 1
+2024-11-16T03:06:56.576Z [info]: /api/posttoken校验
+2024-11-16T03:06:56.578Z [info]: token
+2024-11-16T03:06:56.580Z [info]: /api/post
+2024-11-16T03:06:56.580Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:07:26.554Z [info]: /api/posttoken校验
+2024-11-16T03:07:26.556Z [info]: token
+2024-11-16T03:07:26.559Z [info]: /api/post
+2024-11-16T03:07:26.559Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:07:55.239Z [info]: /api/posttoken校验
+2024-11-16T03:07:55.240Z [info]: token
+2024-11-16T03:07:55.242Z [info]: /api/post
+2024-11-16T03:07:55.243Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:08:03.088Z [info]: /api/posttoken校验
+2024-11-16T03:08:03.090Z [info]: token
+2024-11-16T03:08:03.093Z [info]: /api/post
+2024-11-16T03:08:03.094Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:02.648Z [info]: /api/posttoken校验
+2024-11-16T03:11:02.650Z [info]: token
+2024-11-16T03:11:02.652Z [info]: /api/post
+2024-11-16T03:11:02.653Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:20.753Z [info]: /api/posttoken校验
+2024-11-16T03:11:20.753Z [info]: token
+2024-11-16T03:11:20.754Z [info]: /api/post
+2024-11-16T03:11:20.754Z [info]: userId: 96dc11c3-a60a-4b5c-a433-016fc2c69a3c查找帖子
+2024-11-16T03:11:34.139Z [info]: /api/posttoken校验
+2024-11-16T03:11:34.139Z [info]: token
+2024-11-16T03:11:34.140Z [info]: /api/post
+2024-11-16T03:11:34.140Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c查找帖子
