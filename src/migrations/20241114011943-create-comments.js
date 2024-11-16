@@ -15,7 +15,7 @@ module.exports = {
         defaultValue: Sequelize.UUIDV4,
         primaryKey: true,
       },
-      postId: {
+      id: {
         type: Sequelize.UUID,
         allowNull: false,
         references: {

@@ -39,8 +39,8 @@ export const getCommentsByUserId = async (req: Request, res: Response) => {
 export const deleteComment = async (req: Request, res: Response) => {
   try {
     logger.info(req.baseUrl);
-    const { userId, postId, id } = req.params;
-    const response = await CommentServices.deleteComment(String(userId), String(postId), String(id));
+    const { userId, id, postId } = req.body;
+    const response = await CommentServices.deleteComment(String(userId), String(id), String(postId));
     return handleReturn(200, response, null, res);
   } catch (error) {
     logger.error(error);

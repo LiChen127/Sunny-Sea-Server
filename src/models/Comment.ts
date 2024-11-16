@@ -10,35 +10,38 @@ class Comment extends Model {
   public updatedAt!: Date;
 
   static initModel(sequelize: Sequelize) {
-    Comment.init({
-      id: {
-        type: DataTypes.CHAR(36),
-        defaultValue: DataTypes.UUIDV4,
-        primaryKey: true
+    Comment.init(
+      {
+        id: {
+          type: DataTypes.CHAR(36),
+          defaultValue: DataTypes.UUIDV4, // 生成唯一 UUID
+          primaryKey: true,
+        },
+        content: {
+          type: DataTypes.TEXT,
+          allowNull: false,
+        },
+        userId: {
+          type: DataTypes.CHAR(36),
+          allowNull: false,
+        },
+        likes: {
+          type: DataTypes.INTEGER,
+          defaultValue: 0,
+          allowNull: false,
+        },
+        postId: {
+          type: DataTypes.CHAR(36),
+          allowNull: false,
+        },
       },
-      content: {
-        type: DataTypes.TEXT,
-        allowNull: false
-      },
-      userId: {
-        type: DataTypes.CHAR(36),
-        allowNull: false
-      },
-      likes: {
-        type: DataTypes.INTEGER,
-        defaultValue: 0,
-        allowNull: false
-      },
-      postId: {
-        type: DataTypes.CHAR(36),
-        defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
+      {
+        sequelize,
+        tableName: "comments",
+        timestamps: true,
       }
-    }, {
-      sequelize,
-      tableName: 'comments',
-      timestamps: true
-    })
+    );
+
   }
 }
 

@@ -14,6 +14,7 @@ export const publishComment = async (commentDetail: publishCommentDetail): Promi
     logger.error('参数缺失');
     return false;
   }
+  console.log(content, postId, userId);
   try {
     const comment = await Comment.create({
       content: content,
@@ -23,10 +24,10 @@ export const publishComment = async (commentDetail: publishCommentDetail): Promi
     logger.info(`userId: ${userId}, postId: ${postId} publish comment success`);
     const commentPostIdKey = `post:${postId}:comments`;
     const commentUserIdKey = `user:${userId}:comments`;
-    logger.info(`redis key: postId${commentPostIdKey}`);
+    logger.info(`redis key: id${commentPostIdKey}`);
     logger.info(`redis key: userId${commentUserIdKey}`);
-    await redis.hset(commentPostIdKey, comment.id, JSON.stringify(comment));
-    await redis.hset(commentUserIdKey, comment.id, JSON.stringify(comment));
+    await redis.hset(commentPostIdKey, comment.postId, JSON.stringify(comment));
+    await redis.hset(commentUserIdKey, comment.userId, JSON.stringify(comment));
     return true;
   } catch (error) {
     logger.error(error);
@@ -39,7 +40,7 @@ export const getAllCommentsByPostId = async (postId: string): Promise<GetComment
     const commentPostIdKey = `post:${postId}:comments`;
     const comments = await redis.hvals(commentPostIdKey);
     if (comments.length > 0) {
-      logger.info(`从redis获取评论成功, postId: ${postId}`);
+      logger.info(`从redis获取评论成功, id: ${postId}`);
       return {
         comments: comments.map((comment: string) => JSON.parse(comment)),
         total: comments.length
@@ -92,28 +93,28 @@ export const getCommentsByUserId = async (userId: string): Promise<Comment[] | n
 }
 
 // 删除评论
-export const deleteComment = async (userId: string, postId: string, id: string): Promise<boolean> => {
-  if (!userId || !postId || !id) {
+export const deleteComment = async (userId: string, id: string, postId: string): Promise<boolean> => {
+  if (!userId || !id || !postId) {
     logger.error('删除评论失败，信息不完整');
     return false;
   }
   try {
-    const commentPostIdKey = `post:${postId}:comments`;
+    const commentpostIdKey = `post:${postId}:comments`;
     const commentUserIdKey = `user:${userId}:comments`;
     const commentbackupKey = `user:${userId}:backup_comments`;
     // 去拿缓存两个
-    const cacheByPostId = await redis.hget(commentPostIdKey, id);
-    const cacheByUserId = await redis.hget(commentUserIdKey, id);
+    const cacheByPostId = await redis.hget(commentpostIdKey, postId);
+    const cacheByUserId = await redis.hget(commentUserIdKey, userId);
     // 删除
     if (cacheByPostId) {
-      logger.info(`从redis PostId缓存中删除评论, userId:${userId}, postId: ${postId}, id: ${id}`);
-      await redis.hdel(commentPostIdKey, id);
-      await redis.hset(commentbackupKey, id, cacheByUserId);
+      logger.info(`从redis id缓存中删除评论, userId:${userId}, id: ${id}, postId: ${postId}`);
+      await redis.hdel(commentpostIdKey, postId);
+      await redis.hset(commentbackupKey, postId, cacheByUserId);
     }
     if (cacheByUserId) {
-      logger.info(`从redis UserId缓存中删除评论, userId:${userId}, postId: ${postId}, id: ${id}`);
-      await redis.hdel(commentUserIdKey, id);
-      await redis.hset(commentbackupKey, id, cacheByUserId);
+      logger.info(`从redis UserId缓存中删除评论, userId:${userId}, id: ${id}, postId: ${postId}`);
+      await redis.hdel(commentUserIdKey, userId);
+      await redis.hset(commentbackupKey, userId, cacheByUserId);
     }
     // 从数据库中删除
     logger.info(`从数据库中删除评论, id: ${id}`);

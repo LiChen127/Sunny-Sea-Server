@@ -339,7 +339,7 @@
 2024-11-16T03:51:24.696Z [info]: /api/posttoken校验
 2024-11-16T03:51:24.697Z [info]: token
 2024-11-16T03:51:24.698Z [info]: /api/post
-2024-11-16T03:51:24.702Z [error]: 删除失败, ReplyError: ERR wrong number of arguments for 'hset' command postId: 58b76058-47c4-414d-ac9a-6a1b8bdfad98, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
+2024-11-16T03:51:24.702Z [error]: 删除失败, ReplyError: ERR wrong number of arguments for 'hset' command id: 58b76058-47c4-414d-ac9a-6a1b8bdfad98, userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c
 2024-11-16T03:53:41.260Z [info]: /api/posttoken校验
 2024-11-16T03:53:41.262Z [info]: token
 2024-11-16T03:53:41.263Z [info]: /api/post
@@ -397,4 +397,96 @@
 2024-11-16T05:11:39.441Z [info]: /api/posttoken校验
 2024-11-16T05:11:39.443Z [info]: token
 2024-11-16T05:11:39.445Z [info]: /api/post
-2024-11-16T05:11:39.451Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c, postId319323e2-bfd5-48c5-9e8a-2946e93bee95update post success
+2024-11-16T05:11:39.451Z [info]: userId: 92f247a1-3367-40c9-9036-1dce2ed4c39c, id319323e2-bfd5-48c5-9e8a-2946e93bee95update post success
+2024-11-16T07:00:51.409Z [info]: /api/user
+2024-11-16T07:00:51.489Z [info]: 用户开始注册, id: b006845f-133b-4dec-860d-2cb98d54be6d, username: 18636182719
+2024-11-16T07:00:51.490Z [info]: 用户 18636182719 注册成功, ID: b006845f-133b-4dec-860d-2cb98d54be6d
+2024-11-16T07:01:08.918Z [info]: /api/user
+2024-11-16T07:01:08.978Z [info]: 用户登录成功, 用户名: 18636182719
+2024-11-16T07:02:40.522Z [info]: /api/posttoken校验
+2024-11-16T07:02:40.523Z [info]: token
+2024-11-16T07:02:40.524Z [info]: /api/post
+2024-11-16T07:02:40.529Z [error]: 用户发帖失败,用户不存在 userId: b006845f-133b-4dec-860d-2cb98d54be6d
+2024-11-16T07:03:07.098Z [info]: /api/posttoken校验
+2024-11-16T07:03:07.099Z [info]: token
+2024-11-16T07:03:07.101Z [info]: /api/post
+2024-11-16T07:03:07.107Z [error]: 用户发帖失败,用户不存在 userId: b006845f-133b-4dec-860d-2cb98d54be6d
+2024-11-16T07:04:29.978Z [info]: /api/profiletoken校验
+2024-11-16T07:04:29.978Z [info]: token
+2024-11-16T07:04:45.427Z [info]: /api/profiletoken校验
+2024-11-16T07:04:45.427Z [info]: token
+2024-11-16T07:04:45.435Z [info]: 用户信息上传成功, 昵称: a NPD man
+2024-11-16T07:04:45.435Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-16T07:05:06.638Z [info]: /api/posttoken校验
+2024-11-16T07:05:06.638Z [info]: token
+2024-11-16T07:05:06.639Z [info]: /api/post
+2024-11-16T07:05:06.651Z [info]: 用户 b006845f-133b-4dec-860d-2cb98d54be6d 发布了帖子 1a7f6c87-5683-4bf4-94f6-e2c6125fda63
+2024-11-16T07:07:04.256Z [info]: /api/commenttoken校验
+2024-11-16T07:07:04.256Z [info]: token
+2024-11-16T07:07:04.257Z [info]: /api/comment
+2024-11-16T07:07:04.281Z [error]: Cannot add or update a child row: a foreign key constraint fails (`sunny_sea`.`comments`, CONSTRAINT `comments_ibfk_292` FOREIGN KEY (`id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-11-16T07:13:31.428Z [info]: /api/commenttoken校验
+2024-11-16T07:13:31.430Z [info]: token
+2024-11-16T07:13:31.432Z [info]: /api/comment
+2024-11-16T07:13:31.446Z [error]: Cannot add or update a child row: a foreign key constraint fails (`sunny_sea`.`comments`, CONSTRAINT `comments_ibfk_294` FOREIGN KEY (`id`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-11-16T07:45:54.280Z [info]: /api/commenttoken校验
+2024-11-16T07:45:54.281Z [info]: token
+2024-11-16T07:45:54.284Z [info]: /api/comment
+2024-11-16T07:45:54.305Z [error]: Cannot add or update a child row: a foreign key constraint fails (`sunny_sea`.`comments`, CONSTRAINT `comments_ibfk_306` FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2024-11-16T07:46:51.563Z [info]: /api/user
+2024-11-16T07:46:51.640Z [info]: 用户开始注册, id: 4380bb3b-e4db-461b-9121-d94a20d2047a, username: 18912331820
+2024-11-16T07:46:51.640Z [info]: 用户 18912331820 注册成功, ID: 4380bb3b-e4db-461b-9121-d94a20d2047a
+2024-11-16T07:47:04.644Z [info]: /api/user
+2024-11-16T07:47:04.702Z [info]: 用户登录成功, 用户名: 18912331820
+2024-11-16T07:47:34.735Z [info]: /api/profiletoken校验
+2024-11-16T07:47:34.736Z [info]: token
+2024-11-16T07:47:34.744Z [info]: 用户信息上传成功, 昵称: a NPD man
+2024-11-16T07:47:34.744Z [info]: request body: [object Object] 用户信息上传成功
+2024-11-16T07:48:04.898Z [info]: /api/posttoken校验
+2024-11-16T07:48:04.898Z [info]: token
+2024-11-16T07:48:04.900Z [info]: /api/post
+2024-11-16T07:48:04.911Z [info]: 用户 4380bb3b-e4db-461b-9121-d94a20d2047a 发布了帖子 cd47ac3d-66be-41cf-9e07-cff5fe226139
+2024-11-16T07:48:18.676Z [info]: /api/posttoken校验
+2024-11-16T07:48:18.677Z [info]: token
+2024-11-16T07:48:18.678Z [info]: /api/post
+2024-11-16T07:48:18.679Z [info]: userId: 4380bb3b-e4db-461b-9121-d94a20d2047a查找帖子
+2024-11-16T07:48:43.168Z [info]: /api/commenttoken校验
+2024-11-16T07:48:43.169Z [info]: token
+2024-11-16T07:48:43.169Z [info]: /api/comment
+2024-11-16T07:48:43.177Z [info]: userId: 4380bb3b-e4db-461b-9121-d94a20d2047a, postId: cd47ac3d-66be-41cf-9e07-cff5fe226139 publish comment success
+2024-11-16T07:48:43.177Z [info]: redis key: idpost:cd47ac3d-66be-41cf-9e07-cff5fe226139:comments
+2024-11-16T07:48:43.177Z [info]: redis key: userIduser:4380bb3b-e4db-461b-9121-d94a20d2047a:comments
+2024-11-16T07:52:30.640Z [info]: /api/commenttoken校验
+2024-11-16T07:52:30.641Z [info]: token
+2024-11-16T07:52:30.643Z [info]: /api/comment
+2024-11-16T07:52:30.647Z [error]: WHERE parameter "postId" has invalid "undefined" value
+2024-11-16T07:54:06.940Z [info]: /api/commenttoken校验
+2024-11-16T07:54:06.942Z [info]: token
+2024-11-16T07:54:06.944Z [info]: /api/comment
+2024-11-16T07:54:10.631Z [info]: /api/commenttoken校验
+2024-11-16T07:54:10.633Z [info]: token
+2024-11-16T07:54:10.634Z [info]: /api/comment
+2024-11-16T07:54:10.654Z [info]: 从redis获取评论成功, id: cd47ac3d-66be-41cf-9e07-cff5fe226139
+2024-11-16T07:55:54.163Z [info]: /api/commenttoken校验
+2024-11-16T07:55:54.163Z [info]: token
+2024-11-16T07:55:54.164Z [info]: /api/comment
+2024-11-16T07:55:54.164Z [info]: 查找userId: 4380bb3b-e4db-461b-9121-d94a20d2047a评论
+2024-11-16T07:55:54.166Z [info]: 从redis userId4380bb3b-e4db-461b-9121-d94a20d2047a获取评论成功
+2024-11-16T07:59:55.211Z [info]: /api/commenttoken校验
+2024-11-16T07:59:55.213Z [info]: token
+2024-11-16T07:59:55.215Z [info]: /api/comment
+2024-11-16T07:59:55.217Z [info]: 从redis id缓存中删除评论, userId:4380bb3b-e4db-461b-9121-d94a20d2047a, id: 5d908c97-8637-4285-a829-e29edc4c623b, postId: cd47ac3d-66be-41cf-9e07-cff5fe226139
+2024-11-16T07:59:55.219Z [info]: 从redis UserId缓存中删除评论, userId:4380bb3b-e4db-461b-9121-d94a20d2047a, id: 5d908c97-8637-4285-a829-e29edc4c623b, postId: cd47ac3d-66be-41cf-9e07-cff5fe226139
+2024-11-16T07:59:55.220Z [info]: 从数据库中删除评论, id: 5d908c97-8637-4285-a829-e29edc4c623b
+2024-11-16T08:00:14.457Z [info]: /api/commenttoken校验
+2024-11-16T08:00:14.458Z [info]: token
+2024-11-16T08:00:14.458Z [info]: /api/comment
+2024-11-16T08:00:14.470Z [info]: userId: 4380bb3b-e4db-461b-9121-d94a20d2047a, postId: cd47ac3d-66be-41cf-9e07-cff5fe226139 publish comment success
+2024-11-16T08:00:14.470Z [info]: redis key: idpost:cd47ac3d-66be-41cf-9e07-cff5fe226139:comments
+2024-11-16T08:00:14.470Z [info]: redis key: userIduser:4380bb3b-e4db-461b-9121-d94a20d2047a:comments
+2024-11-16T08:00:16.048Z [info]: /api/commenttoken校验
+2024-11-16T08:00:16.048Z [info]: token
+2024-11-16T08:00:16.049Z [info]: /api/comment
+2024-11-16T08:00:16.052Z [info]: userId: 4380bb3b-e4db-461b-9121-d94a20d2047a, postId: cd47ac3d-66be-41cf-9e07-cff5fe226139 publish comment success
+2024-11-16T08:00:16.052Z [info]: redis key: idpost:cd47ac3d-66be-41cf-9e07-cff5fe226139:comments
+2024-11-16T08:00:16.052Z [info]: redis key: userIduser:4380bb3b-e4db-461b-9121-d94a20d2047a:comments
