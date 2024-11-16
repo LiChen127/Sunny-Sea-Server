@@ -24,8 +24,13 @@ interface GetPostsResponse {
   total: number;
 }
 
+interface UpdateRequest extends PublishPostRequest {
+  postId: string;
+}
+
 type PostArrType = {
   id: string;
+  postId: string;
   content: string;
   title: string;
   tag: string;
@@ -39,4 +44,5 @@ export {
   GetPostsRequest,
   GetPostsResponse,
   PostArrType,
+  UpdateRequest
 }
