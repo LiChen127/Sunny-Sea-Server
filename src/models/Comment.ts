@@ -31,7 +31,8 @@ class Comment extends Model {
       },
       postId: {
         type: DataTypes.CHAR(36),
-        allowNull: false
+        defaultValue: DataTypes.UUIDV4,
+        allowNull: false,
       }
     }, {
       sequelize,
