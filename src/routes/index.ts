@@ -2,6 +2,7 @@ import express from "express";
 import userRouter from "./User/user.js";
 import userProfileRouter from "./UserProfile/userProfile.js";
 import postRouter from "./Post/post.js";
+import commentRouter from "./Comment/comment.js";
 import redis from "config/redis.js";
 import connectRabbitMQ from "config/rabbitmq.js";
 // import { authenticateToken } from "../middlewares/auth.js";
@@ -12,7 +13,8 @@ router.use('/user', userRouter);
 router.use('/profile', userProfileRouter);
 // 帖子模块
 router.use('/post', postRouter);
-
+// 评论模块
+router.use('/comment', commentRouter);
 router.get('/test-redis', async (req, res) => {
   try {
     // 测试设置一个 Redis 值

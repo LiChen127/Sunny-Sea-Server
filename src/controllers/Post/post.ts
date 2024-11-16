@@ -44,11 +44,11 @@ export const getPosts = async (req: Request, res: Response): Promise<any> => {
 export const deletePost = async (req: Request, res: Response): Promise<any> => {
   try {
     logger.info(req.baseUrl);
-    const { postId, userId } = req.body;
-    if (!postId || !userId) {
+    const { id, userId } = req.body;
+    if (!id || !userId) {
       return handleReturn(400, null, '请求参数缺失', res);
     }
-    const response = await postServices.deletePost(postId as string, userId as string);
+    const response = await postServices.deletePost(id as string, userId as string);
     if (response) {
       return handleReturn(200, null, '删除成功', res);
     }

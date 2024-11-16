@@ -7,7 +7,6 @@ interface PublishPostRequest {
 
 interface PublishPostSuccessResponse {
   id: string;
-  postId: string;
   userId: string;
 }
 
@@ -25,12 +24,11 @@ interface GetPostsResponse {
 }
 
 interface UpdateRequest extends PublishPostRequest {
-  postId: string;
+  id: string;
 }
 
 type PostArrType = {
   id: string;
-  postId: string;
   content: string;
   title: string;
   tag: string;

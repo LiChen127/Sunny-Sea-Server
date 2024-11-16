@@ -37,11 +37,10 @@ export const publish = async (publishDetail: PublishPostRequest): Promise<Publis
 
     // 将帖子存入redis
     const postKey = `user:${userId}:posts`;
-    await redis.hset(postKey, post.postId, JSON.stringify(post));
+    await redis.hset(postKey, post.id, JSON.stringify(post));
     logger.info(`用户 ${userId} 发布了帖子 ${post.id}`);
     return {
       id: post.id,
-      postId: post.postId,
       userId: post.userId
     }
   } catch (error) {
@@ -89,7 +88,7 @@ export const getPosts = async (getPostsRequest: GetPostsRequest): Promise<GetPos
 
     // 将查询到的帖子缓存到Redis
     for (const post of result.rows) {
-      await redis.hset(postKey, post.postId, JSON.stringify(post));
+      await redis.hset(postKey, post.id, JSON.stringify(post));
     }
 
     const posts = result.rows.map((item) => ({
@@ -98,7 +97,6 @@ export const getPosts = async (getPostsRequest: GetPostsRequest): Promise<GetPos
       tag: item.tag,
       title: item.title,
       likes: item.likes,
-      postId: item.postId,
       createdAt: item.createdAt,
       updatedAt: item.updatedAt,
     }));
@@ -113,8 +111,8 @@ export const getPosts = async (getPostsRequest: GetPostsRequest): Promise<GetPos
   }
 };
 
-export const deletePost = async (postId: string, userId: string): Promise<boolean> => {
-  if (!postId || !userId) {
+export const deletePost = async (id: string, userId: string): Promise<boolean> => {
+  if (!id || !userId) {
     logger.error('删除帖子失败，信息不完整');
     return false;
   }
@@ -124,38 +122,38 @@ export const deletePost = async (postId: string, userId: string): Promise<boolea
     // 从数据库删除
     const result = await Post.destroy({
       where: {
-        postId: postId
+        id: id
       }
     })
     if (result) {
       // 从缓存删除并备份
-      const post = await redis.hget(postKey, postId);
+      const post = await redis.hget(postKey, id);
       if (post) {
-        await redis.hdel(postKey, postId);
-        await redis.hset(backupKey, postId, post); // 备份
-        logger.info(`${userId} 删除 ${postId}帖子 成功, 备份${backupKey}成功`);
+        await redis.hdel(postKey, id);
+        await redis.hset(backupKey, id, post); // 备份
+        logger.info(`${userId} 删除 ${id}帖子 成功, 备份${backupKey}成功`);
       }
       return true;
     } else {
-      logger.error(`${userId} 删除 ${postId}帖子失败， 帖子不存在`);
+      logger.error(`${userId} 删除 ${id}帖子失败， 帖子不存在`);
       return false;
     }
   } catch (error) {
-    logger.error(`删除失败, ${error} postId: ${postId}, userId: ${userId}`);
+    logger.error(`删除失败, ${error} id: ${id}, userId: ${userId}`);
     return false;
   }
 }
 
 export const updatePost = async (publishDetail: UpdateRequest): Promise<boolean> => {
-  const { content, tag, title, userId, postId } = publishDetail;
-  if (!userId || !postId) {
+  const { id, content, tag, title, userId } = publishDetail;
+  if (!userId || !id) {
     logger.error('参数缺失');
     return false;
   }
   try {
     const posts = await Post.findAll({
       where: {
-        postId: postId
+        id: id
       }
     })
     if (posts.length <= 0) {
@@ -172,13 +170,13 @@ export const updatePost = async (publishDetail: UpdateRequest): Promise<boolean>
       title: title,
       tag: tag
     });
-    logger.info(`userId: ${userId}, postId${postId}update post success`);
+    logger.info(`userId: ${userId}, id${id}update post success`);
     // 更新redis
     const postKey = `user:${userId}:posts`;
     await redis.set(postKey, JSON.stringify(post));
     return true;
   } catch (error) {
-    logger.error(`userId: ${userId}, postId${postId}update post failure`);
+    logger.error(`userId: ${userId}, id${id}update post failure`);
     return false;
   }
 }

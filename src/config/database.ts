@@ -33,7 +33,7 @@ Post.belongsTo(User, { foreignKey: 'userId' });
 // userId对应多个comment
 User.hasMany(Comment, { foreignKey: 'userId' });
 Comment.belongsTo(User, { foreignKey: 'userId' });
-// postId对应多个comment
+// id对应多个comment
 Post.hasMany(Comment, { foreignKey: 'postId' });
 Comment.belongsTo(Post, { foreignKey: 'postId' });
 

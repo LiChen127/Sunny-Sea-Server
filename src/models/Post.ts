@@ -3,7 +3,6 @@ import { DataTypes, Model, Sequelize } from "sequelize";
 class Post extends Model {
   public id!: string;
   public userId!: string;
-  public postId!: string;
   public content!: string;
   public title!: string;
   public tag!: string;
@@ -17,11 +16,6 @@ class Post extends Model {
         type: DataTypes.CHAR(36),
         defaultValue: DataTypes.UUIDV4,
         primaryKey: true
-      },
-      postId: {
-        type: DataTypes.CHAR(36),
-        defaultValue: DataTypes.UUIDV4,
-        allowNull: false
       },
       userId: {
         type: DataTypes.CHAR(36),
